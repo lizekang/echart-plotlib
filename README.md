@@ -23,7 +23,7 @@ HTML(echart.plot_else(data_name=data_name, xAxis_data=xAxis_data, yAxis_data=yAx
 # plot pie
 data_name = ["最高气温", "最低温度"]
 data = [10, 20]
-HTML(echart.plot_else(data_name=data_name, data=data, title="天气"))
+HTML(echart.plot_pie(data_name=data_name, data=data, title="天气"))
 ```
 
 # Example
