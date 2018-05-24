@@ -13,11 +13,12 @@ from IPython.display import HTML
 class echartlib(object):
     def __init__(self, width=600, height=450):
         self.head = """
+            <script src="http://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
             <div id="mychart" style="width:"""+str(width)+"""px; height:"""+str(height)+"""px;"></div>
             <script>
             require.config({
                 paths:{
-                    echarts:"//cdn.bootcss.com/echarts/3.2.3/echarts.min",
+                    echarts:"https://cdn.bootcss.com/echarts/3.2.3/echarts.min",
                 }
             })
             require(['echarts'], function(ec){
